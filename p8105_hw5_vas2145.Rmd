@@ -31,3 +31,14 @@ scale_fill_discrete = scale_fill_viridis_d
 theme_set(theme_minimal() + theme(legend.position = "bottom"))
 ```
 
+#Problem 2
+
+Read in and tidy the data
+```{r}
+names_df = 
+  tibble(files=
+      list.files("data/"),
+      path = str_c("data/", files)) |> 
+  mutate(data = map(path, read_csv)) |> 
+  unnest()
+`
