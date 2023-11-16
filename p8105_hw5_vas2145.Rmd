@@ -68,3 +68,8 @@ tidy_df |>
   geom_line() +
   facet_wrap(~arm) +
   labs(x = "Week", y = "Observations", title = "Observations on Subjects over Time")
+```
+
+The `tidy_df` output depicts observations on subjects over time, from the control group and the experimental group. Although Observed data points in the control group were generally similar to the observed data points in the experimental group at the start of the study, observed data points increased over time in comparsion to the control group.
+
+```{r}
