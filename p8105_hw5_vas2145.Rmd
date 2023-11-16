@@ -109,6 +109,7 @@ sim_results |>
   geom_line() +
   labs(x = "True value of μ", y = "Power", title = "Power of test vs true value of μ")
 ```
+
 As power increases, the true value of μ increases as well.
 
 ```{r}
@@ -120,6 +121,7 @@ sim_results |>
   geom_line() +
   labs(x = "True value of μ", y = "Average estimate of μ_hat", title = "Average estimate of μ_hat vs true value of μ")
 ```
+
 For every one unit increase in the Average estimate of μ_hat, the true value of μ increases one unit.
 
 ```{r}
